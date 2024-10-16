@@ -1,8 +1,8 @@
-Proyecto en construcción, WIP.
+<h1>Prueba técnica para Inditex</h1>
 
-Pendiente dividir en commits más atómicos y encapsulados.
+<h2>Proyecto en construcción, pendiente entre otros dividir el código en commits más atómicos</h2>
 
-Mejoras opcionales:
+Mejoras opcionales implementadas:
     - flyway para mantener migraciones: mvn flyway:migrate aplica todas las migraciones
     - CRUD precios
     
