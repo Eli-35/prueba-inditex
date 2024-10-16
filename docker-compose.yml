@@ -1,0 +1,18 @@
+version: '3'
+services:
+  # Servicio para ejecutar la aplicación
+  app:
+    build: .
+    command: ./mvnw spring-boot:run  # Solo correr la aplicación
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  # Base de datos H2
+  db:
+    image: oscarfonts/h2
+    volumes:
+      - h2data:/opt/h2-data
+volumes:
+  h2data:
