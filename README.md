@@ -3,11 +3,11 @@
 <h2>Proyecto en construcción, pendiente entre otros dividir el código en commits más atómicos</h2>
 
 Mejoras opcionales implementadas:
-    - flyway para mantener migraciones: mvn flyway:migrate aplica todas las migraciones
-    - CRUD precios
+- flyway para mantener migraciones: mvn flyway:migrate aplica todas las migraciones
+- CRUD precios
     
 Migraciones:
-    - Al arrancar el servicio, el plugin de Maven Flyway verifica que se hayan aplicado todas las migraciones a la base de datos del servicio. Si hubiera alguna migración pendiente de aplicar, la aplica y luego actualiza el histórico de cambios. El snippet siguiente muestra la primera y única migración aplicada con éxito al arrancar el servicio:
+- Al arrancar el servicio, el plugin de Maven Flyway verifica que se hayan aplicado todas las migraciones a la base de datos del servicio. Si hubiera alguna migración pendiente de aplicar, la aplica y luego actualiza el histórico de cambios. El snippet siguiente muestra la primera y única migración aplicada con éxito al arrancar el servicio:
     
 >2024-10-15T20:24:06.838+02:00  INFO 13796 --- [           main] c.i.prices.EliasInditexApplication       : Starting EliasInditexApplication using Java 17.0.12 with PID 13796
 >
