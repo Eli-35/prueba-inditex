@@ -13,11 +13,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 // import lombok.NoArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@ToString
 @EqualsAndHashCode
 @Entity
 @Table(name = "PRICES")
@@ -42,43 +44,5 @@ public class Price {
         this.priority = priceElem.getPriority();
         this.price = priceElem.getPrice();
         this.currency = priceElem.getCurrency();
-    }
-
-    {
-        // public Price() {
-
-        // };
-
-        // public long getPriceId() {
-        // return this.priceId;
-        // }
-
-        // public int getBrandId() {
-        // return this.brandId;
-        // }
-
-        // public LocalDateTime getStartDate() {
-        // return this.startDate;
-        // }
-
-        // public LocalDateTime getEndDate() {
-        // return this.endDate;
-        // }
-
-        // public int getProductId() {
-        // return this.productId;
-        // }
-
-        // public int getPriority() {
-        // return this.priority;
-        // }
-
-        // public double getPrice() {
-        // return this.price;
-        // }
-
-        // public String getCurrency() {
-        // return this.currency;
-        // }
     }
 }
