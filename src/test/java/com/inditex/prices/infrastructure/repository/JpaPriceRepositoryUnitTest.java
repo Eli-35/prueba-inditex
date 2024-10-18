@@ -16,15 +16,15 @@ import org.springframework.test.context.ActiveProfiles;
 
 import com.inditex.prices.domain.repository.PriceRepository;
 
-// TODO: arreglar datasource
+// TODO: arreglar carga datasource
 
 @ActiveProfiles("test")
-// @ExtendWith(SpringExtension.class)
-// @SpringBootTest(classes = PriceRepository.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @EnableJpaRepositories
 @EntityScan
+// @ExtendWith(SpringExtension.class)
+// @SpringBootTest(classes = PriceRepository.class)
 // @ImportAutoConfiguration(FlywayAutoConfiguration.class)
 // @AutoConfigureTestEntityManager
 // @EnableAutoConfiguration(exclude = FlywayAutoConfiguration.class)
@@ -47,8 +47,8 @@ public class JpaPriceRepositoryUnitTest {
 
         // given
         Price price = Price.builder().priceId(priceId).price(priceValue).build();
-        // price = priceRepository.save(price);
         entityManager.persistAndFlush(price);
+        // price = priceRepository.save(price);
 
         // when
         Price persistedPrice = priceRepository.findById(priceId).orElseThrow();

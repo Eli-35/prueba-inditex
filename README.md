@@ -1,10 +1,13 @@
 <h1>Prueba técnica para Inditex</h1>
 
-<h2>Proyecto en construcción, pendiente entre otros dividir el código en commits más atómicos</h2>
+<h2>Proyecto en construcción, pendiente dividir el código en commits más atómicos y añadir documentación</h2>
 
 Mejoras opcionales implementadas:
-- flyway para mantener migraciones: mvn flyway:migrate aplica todas las migraciones
+- flyway para mantener migraciones
 - CRUD precios
+
+Mejoras a implementar (WIP):
+- especificación de la API mediante OpenAPI
     
 Migraciones:
 - Al arrancar el servicio, el plugin de Maven Flyway verifica que se hayan aplicado todas las migraciones a la base de datos del servicio. Si hubiera alguna migración pendiente de aplicar, la aplica y luego actualiza el histórico de cambios. El snippet siguiente muestra la primera y única migración aplicada con éxito al arrancar el servicio:
